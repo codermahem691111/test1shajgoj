@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Login() {
   const [phone, setPhone] = useState("");
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
+  
 
   const handleLogin = async () => {
     if (!phone.trim()) return;
